@@ -1,0 +1,223 @@
+.image-container {
+    position: center;
+    overflow: hidden; /* Ensure text doesn't overflow the container */
+}
+
+.image {
+    width: 250px;
+    height: 300px; 
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 20px;
+    margin: 0 auto;
+}
+
+.video-container {
+    width: 400px;
+    height: 500px; /* Set the height based on the aspect ratio */
+    position: relative; /* Ensure relative positioning for absolute centering */
+    margin: 0 auto; /* Center the container horizontally */
+}
+
+.content {
+    position: relative;
+    z-index: 1; /* Ensure the content is above the video */
+}
+
+.slider {
+    position: relative;
+    z-index: 1; /* Ensure the slider is above the video */
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+h1 {
+    font-family: 'Pacifico', cursive;
+    text-align: center; /* Horizontal alignment */
+    vertical-align: middle; /* Vertical alignment */
+}
+
+header {
+    position: relative;
+    text-align: center; /* Horizontal alignment */
+    display:grid;
+    place-items: center;
+}
+
+header img {
+    display: inline-block;
+    vertical-align: middle; /* Vertical alignment */
+    width: 290px;
+    height: fit-content;
+}
+
+body {
+    background: linear-gradient(to bottom, #fad783, #decb93, #c0bea8, #a9b2b9, #7c7f83, #8c9098db); /* Gradient background */
+}
+
+@keyframes flash { 
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+h2 {
+    text-align: center;
+    font-style: oblique;
+    font-size: larger;
+}
+
+.primary-button,
+.secondary-button {
+    border-radius: 20px 20px 20px 20px;
+    padding: 6px 12px;
+    background-color: #f6b620;
+    color: rgb(0, 0, 0);
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    float: right;
+    text-shadow: #000000;
+    
+}
+
+.button-container {
+    display: flex;
+    justify-content: flex-end; /* Align items to the end of the container */
+    place-items: center;
+    margin-left: 20%;
+    margin-right: 34%;
+}
+
+.primary-button {
+    margin-left: 10px; /* Add spacing between buttons */
+}
+
+p {
+    text-align: justify;
+}    
+
+.table-container {
+    display: flex;
+}
+
+.table-container table {
+    flex: 1; /* Equal width for both tables */
+    margin-right: 20px; 
+    text-align: left;
+    text-shadow: cadetblue;
+}
+
+
+/* Apply styling to all tables */
+table {
+    border-collapse: collapse; /* Collapse table borders */
+    width: 100%; /* Make tables fill their container */
+}
+
+/* Style table headers */
+th {
+    background-color: rgba(168, 169, 169, 0.5); /* Light gray background */
+    padding: 8px; /* Add padding */
+    text-align: left; /* Align text to the Left*/
+}
+
+/* Style table headers */
+th,
+td {
+    background-color: rgba(0, 0, 0, 0.5); /* Transparent background */
+    padding: 8px; 
+    text-align: left; 
+}
+
+/*Style footer section*/
+footer {
+    position: relative;
+    text-align: center; /* Horizontal alignment */
+    display: grid;
+    place-items: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Transparent black background */
+    color: #000000;
+    font-weight: bold;
+    display: flex;
+    justify-content: center; /* Align content horizontally at the center */
+}
+
+.footer-content {
+    margin-bottom: 10px; /* Add margin bottom for space */
+    color: rgb(0, 0, 0, 0.5);
+}
+
+.styled-button {
+    border-radius: 20px 20px 20px 20px;
+    padding: 6px 12px;
+    background-color: #7a97c4;
+    color: rgb(0, 0, 0);
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    float: right;
+    text-shadow: #000000;
+}
+
+/* Slider */
+.slider {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.slides {
+    display: flex;
+    width: 300%;
+    animation: slide-animation 15s infinite;
+}
+
+.slide {
+    flex: 0 0 33.333%;
+}
+
+.slide img {
+    width: 500px;
+    height: 400px;
+}
+
+@keyframes slide-animation {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* Content */
+.content {
+    position: relative;
+    z-index: 1;
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-between; /* Adjust as needed */
+    align-items: center;
+    box-shadow: #000000;
+    border-color: #000000;
+    border-radius: 10%;
+    border-style: double;
+    background-color: rgba(148, 200, 190, 0.416);
+}
+
+h4 {
+    font-size: medium;
+    font: italic;
+    color: azure;
+}
